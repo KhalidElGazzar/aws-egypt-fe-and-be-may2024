@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    
+    <script src="../js/call_backend.js"></script>
+
+
+    <title>MIKTech | Contact us</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1 class="title">MIKTech</h1>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero contact-hero">
+                <h2>Contact Us</h2>
+                <p>Via email, phone, whatsapp or even pay us a visit!</p>
+            </section>
+
+            <section class="main-content">
+                <section class="featured-articles">
+                    <article>
+                        <h3>Address</h3>
+                        <p>Harum reprehenderit odio voluptatum saepe quod facilis temporibus quos, eum illum laboriosam magnam omnis impedit, nostrum doloremque a qui minus consequuntur aliquam deleniti accusantium nemo.</p>
+                    </article>
+                    <article>
+                        <h3>Phone</h3>
+                        <p>123456789</p>
+                    </article>
+                    <article>
+                        <h3>Phone</h3>
+                        <p>987654321</p>
+                    </article>
+                    <article>
+                        <h3>Email</h3>
+                        <p>info (at) MikTech (dot) digital</p>
+                    </article>
+                </section>
+                <aside class="sidebar">
+                    <h3>Map</h3>
+                    
+                    <img src="https://via.placeholder.com/300x450" alt="Our Location on Map" width="300" height="450">
+                </aside>
+            </section>
+            
+            <section id="contactus">
+                <div id="email_form">
+                    <form action="" method="post">
+                         First Name: <input type="text" name="name" id="name"><br>
+                         Email: <input type="text" name="email" id="email"> <br>
+
+                         <input type="button" value="Register in our Mailing list" onclick="callAPI(document.getElementById('name').value,document.getElementById('email').value)">
+
+                    </form>
+                </div>
+                <div id="email_form_notification">
+
+                </div>
+
+            </section>
+
+            <div class="fixed-social-icons">
+                <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../img/youtube.png" alt="YouTube"></a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 MIKTech. All rights reserved.</p>
+        </footer>
+    </div>
+    </body>
+</html>

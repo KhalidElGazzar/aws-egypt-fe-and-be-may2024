@@ -1,0 +1,305 @@
+* {
+    /* 
+    font-family: 'Playfair Display', serif;
+    */
+    font-family: 'Montserrat', sans-serif;
+    /* border: red 2px solid; */
+
+}
+
+/* ####################################################################################################### */
+
+/* Reset default margins and paddings */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ####################################################################################################### */
+
+/* Set page width and center content */
+body {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    /* Add header styles */
+}
+
+/* ####################################################################################################### */
+
+/* Navigation bar styles */
+
+nav {
+    background-color: #464646;
+    color: #fff;
+    padding: 10px 40px; /* Add left spacing to title */
+    display: flex;
+    justify-content: center; /* Align title and menu horizontally */
+}
+
+.title {
+    flex: 1;
+    padding-top: 10px;
+    justify-content: center; /* Align title and menu horizontally */
+
+}
+
+.menu {
+    flex: 4;
+    justify-content: flex-end; /* Align menu to the left */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9900; /* Change to your desired hover color */
+}
+
+/* ####################################################################################################### */
+
+/* Hero section styles */
+.hero {
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.blog-hero {
+    background-image: url("../img/blog.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.about-hero {
+    background-image: url("../img/about.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.contact-hero {
+    background-image: url("../img/contact.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+}
+
+.error-hero {
+    background-image: url("../img/error.jpg");
+    background-size: cover;
+    background-position: top;
+    opacity: 0.5;
+    height: 500px;
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* not working - check */
+.hero button:hover {
+    cursor: pointer;
+    color: #111;
+    background-color: red; /* Change to your desired hover color */
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 600;
+
+}
+
+/* ####################################################################################################### */
+
+/* Main content styles */
+.main-content {
+    /* lets flex it */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Featured articles styles */
+.featured-articles {
+    /* Add featured articles styles */
+    margin-right: 10px;
+
+    /* lets specify the flex size */
+    flex:5;
+}
+
+/* Sidebar styles */
+.sidebar {
+    /* Add sidebar styles */
+    margin-left: 10px;
+    flex:2;
+}
+
+/* Footer styles */
+footer {
+    /* Add footer styles */
+}
+
+/* ####################################################################################################### */
+
+.testmonials h3, .services h3 {
+    margin-top: 20px;
+}
+
+.testmonials, .services {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.testmonial-detail, .service-detail {
+    flex: 2;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* ####################################################################################################### */
+/* Article and sidebar */
+
+article h3, .sidebar h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+article p, .sidebar p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1.25rem;
+}
+
+article p:last-child {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1.5rem;;
+}
+/* ####################################################################################################### */
+
+/* Fixed social icons */
+.fixed-social-icons {
+    position: fixed;
+    top: 50%; /* Adjust this value */
+    right: 1rem;
+    transform: translateY(-50%);
+    /* Add styles for social icons */
+}
+
+
+/* Fixed social icons styles */
+.fixed-social-icons {
+    position: fixed;
+    top: 50%; /* Adjust this value */
+    left: 1.5rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-social-icons a {
+    margin: 0.5rem 0;
+}
+
+.fixed-social-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20%; /* To make the icons circular */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fixed-social-icons img:hover {
+    opacity: 0.6; /* Change to your desired hover opacity */
+}
+
+
+/* ####################################################################################################### */
+
+/* Footer styles */
+footer {
+
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    /* 
+    position: absolute; 
+    bottom: 0;
+    */
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Adjust the footer text color on hover if desired */
+footer a:hover {
+    color: #ff9900; /* Change to your desired hover color */
+}
+
+/* ####################################################################################################### */
+
+/* Media query for smaller screen widths */
+@media screen and (max-width: 1280px) {
+    .fixed-social-icons {
+        position: fixed;
+        bottom: 1rem; /* Adjust this value according to your preference */
+        top: auto; /* Reset top property */
+        left: 1.5rem;
+        transform: translateY(0%); /* Reset transform property */
+        flex-direction: row; /* Change the flex direction to horizontal */
+        justify-content: center; /* Center the icons horizontally */
+        align-items: flex-end; /* Align the icons to the bottom */
+    }
+    
+    .fixed-social-icons a {
+        margin: 0 0.5rem; /* Adjust the margin according to your preference */
+    }
+
+    /* flex the main section and and fixed-social-icons 
+    below each other for smaller devices */
+
+}
+

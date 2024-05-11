@@ -1,0 +1,9 @@
+// Define groups and nodes
+API gateway [icon: aws-api-gateway]
+Lambda [icon: aws-lambda]
+IAM [icon: aws-iam]
+DynamoDB [icon: aws-dynamodb]
+
+// Define connections
+API gateway > Lambda > DynamoDB
+Lambda > IAM
